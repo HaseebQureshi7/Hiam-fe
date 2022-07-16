@@ -1,0 +1,41 @@
+@import "../../../master-styles.scss";
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  background-color: black;
+}
+
+.maintext {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.input-field {
+  @include inputFields(50);
+}
+
+.btn {
+    float: right;
+}
+
+.login-btn {
+    @include button(black, white);
+}
+
+@media screen and (orientation:portrait) {
+    .maintext {
+        text-align: center;
+        font-size: 1rem;
+      }
+
+    .input-field {
+        @include inputFields(90);
+      }      
+}

@@ -1,0 +1,43 @@
+@import "../../../master-styles.scss";
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+.signup-container div {
+  margin-bottom: 5%;
+}
+
+.maintext {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.input-field {
+  @include inputFields(50);
+}
+
+.btn {
+    float: right;
+}
+
+.login-btn {
+    @include button(black, white);
+}
+
+@media screen and (orientation:portrait) {
+    .maintext {
+        text-align: center;
+        font-size: 1rem;
+      }
+
+    .input-field {
+        @include inputFields(90);
+      }      
+}
