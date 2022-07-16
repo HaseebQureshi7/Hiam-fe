@@ -117,6 +117,12 @@ $accent_color: #d61c4e;
   }
 }
 
+@media screen and (orientation:portrait) {
+  .bg-animations div {
+    display: none;
+  }
+}
+
 // BACKGROUND-ANIMATIONS END
 
 // Effects
