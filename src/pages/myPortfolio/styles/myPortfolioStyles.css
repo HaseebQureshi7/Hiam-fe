@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+.bg-animations div {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  filter: blur(100px);
+}
+
+.bg-animations .circle {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: red;
+  -webkit-animation: bg-anim ease-in-out 20s alternate infinite;
+          animation: bg-anim ease-in-out 20s alternate infinite;
+}
+
+.bg-animations .circle1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(251, 255, 0);
+  -webkit-animation: bg-anim ease-in-out 15s alternate infinite;
+          animation: bg-anim ease-in-out 15s alternate infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.bg-animations .square {
+  position: absolute;
+  border-radius: 0%;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(255, 0, 191);
+  -webkit-animation: bg-anim ease-in-out 20s alternate infinite;
+          animation: bg-anim ease-in-out 20s alternate infinite;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.bg-animations .square2 {
+  position: absolute;
+  border-radius: 0%;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(0, 110, 255);
+  -webkit-animation: bg-anim ease-in-out 15s alternate infinite;
+          animation: bg-anim ease-in-out 15s alternate infinite;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes bg-anim {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  30% {
+    top: 25%;
+    left: 25%;
+  }
+  60% {
+    top: 50%;
+    left: 50%;
+  }
+  90% {
+    top: 65%;
+    left: 65%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+
+@keyframes bg-anim {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  30% {
+    top: 25%;
+    left: 25%;
+  }
+  60% {
+    top: 50%;
+    left: 50%;
+  }
+  90% {
+    top: 65%;
+    left: 65%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+@media screen and (orientation: portrait) {
+  .bg-animations div {
+    display: none;
+  }
+}
+neon {
+  background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-animation: grad-anim infinite 2s ease-in-out;
+          animation: grad-anim infinite 2s ease-in-out;
+}
+
+@-webkit-keyframes grad-anim {
+  30% {
+    background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  60% {
+    background: linear-gradient(to right, #ff6b08, #ff6b08, #ff0898);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  90% {
+    background: linear-gradient(to right, #ff0898, #ff0898, #08ff31);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to right, #08ff31, #08ff31, #ff0808);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+}
+
+@keyframes grad-anim {
+  30% {
+    background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  60% {
+    background: linear-gradient(to right, #ff6b08, #ff6b08, #ff0898);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  90% {
+    background: linear-gradient(to right, #ff0898, #ff0898, #08ff31);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to right, #08ff31, #08ff31, #ff0808);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+}
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+  width: 100%;
+  height: 10%;
+}
+.navbar .title-text {
+  font-size: 1.5rem;
+}
+.navbar .options {
+  min-width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.upper-profile {
+  display: flex;
+  padding: 5%;
+}
+.upper-profile .profile-picture img {
+  width: 75%;
+  height: auto;
+  border-radius: 100%;
+}
+.upper-profile .profile-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.upper-profile .profile-stats .user-name {
+  font-size: 1.25rem;
+  color: #293462;
+}
+.upper-profile .profile-stats .user-profile {
+  font-size: 1.25rem;
+  color: #d61c4e;
+}
+.upper-profile .profile-stats .user-bio {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(19, 19, 19);
+}
+
+.personal-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 5% 5%;
+}
+.personal-data h3 {
+  color: rgb(19, 19, 19);
+}
+.personal-data h1 {
+  color: #293462;
+  font-size: 2.5rem;
+}
+
+@media screen and (orientation: portrait) {
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    background-color: #f5f5f5;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    width: 100%;
+    height: 10%;
+  }
+  .navbar .title-text {
+    font-size: 1.25rem;
+  }
+  .navbar .options {
+    min-width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .navbar .options i {
+    transform: scale(0.9);
+  }
+  .upper-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+  }
+  .upper-profile div {
+    margin: 2%;
+  }
+  .upper-profile .profile-picture img {
+    width: 50%;
+    height: auto;
+    border: 3px solid rgba(0, 255, 255, 0.678);
+    border-style: dotted;
+    border-radius: 100%;
+  }
+  .upper-profile .profile-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  .upper-profile .profile-stats .user-name {
+    font-size: 1rem;
+  }
+  .upper-profile .profile-stats .user-profile {
+    font-size: 1rem;
+  }
+  .upper-profile .profile-stats .user-bio {
+    font-size: 0.75rem;
+  }
+  .personal-data h1 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=myPortfolioStyles.css.map */

@@ -7,7 +7,7 @@ export default function Signup() {
   const navigate = useNavigate()
 
   function OnSubmit(){
-    navigate('./home')
+    navigate('/Myportfolio')
   }
 
   return (
