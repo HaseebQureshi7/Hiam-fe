@@ -22,20 +22,27 @@
 }
 
 .btn {
-    float: right;
+  float: right;
 }
 
 .login-btn {
-    @include button(black, white);
+  @include button(black, white);
 }
 
-@media screen and (orientation:portrait) {
-    .maintext {
-        text-align: center;
-        font-size: 1rem;
-      }
+@media screen and (orientation: portrait) {
+  .login-container {
+    background-image: url("../../../imgs/motion-illusion.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+  }
 
-    .input-field {
-        @include inputFields(90);
-      }      
+  .maintext {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .input-field {
+    @include inputFields(90);
+  }
 }

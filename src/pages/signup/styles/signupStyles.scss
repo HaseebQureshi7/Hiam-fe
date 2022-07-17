@@ -32,6 +32,14 @@
 }
 
 @media screen and (orientation:portrait) {
+
+  .signup-container {
+    background-image: url('../../../imgs/motion-illusion.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+  }
+
     .maintext {
         text-align: center;
         font-size: 1rem;

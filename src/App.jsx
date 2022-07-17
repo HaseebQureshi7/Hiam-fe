@@ -8,8 +8,6 @@ import Signup from "./pages/signup/Signup";
 function App() {
 
   const location = useLocation();
-  console.log(location.pathname)
-
   return (
     <>
       <AnimatePresence exitBeforeEnter>

@@ -1,149 +1,148 @@
 @import "../../../master-styles.scss";
 
 .landing-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
 }
 
 .logo img {
-    max-width: 40vw;
-    max-height: 40vh;
+  max-width: 40vw;
+  max-height: 40vh;
 }
 
 .quotes {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 900;
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 900;
 }
 
 .quotes::after {
-    color: white;
-    content: "Accomplish";
-    text-decoration:line-through;
-    text-decoration-skip-ink: all;
-    text-decoration-color: rgba(255, 235, 205, 0.082);
-    // text-decoration-style:dotted;
-    // opacity: 0;
-    text-transform: uppercase;
-    animation: motivational-anim 20s infinite 1s;
+  opacity: 0;
+  color: white;
+  content: "Accomplish";
+  text-transform: uppercase;
+  text-decoration: line-through;
+  text-decoration-skip-ink: all;
+  text-decoration-color: rgba(255, 235, 205, 0.082);
+  animation: motivational-anim 20s ease-in-out 1s infinite;
 
-    @keyframes motivational-anim {
-        0% {
-            opacity: 1;
-            content: "Accomplish";
-        }
-
-        5% {
-            opacity: 1;
-            content: "Action";
-        }
-        10% {
-            opacity: 1;
-            content: "Ambition";
-        }
-        
-        15% {
-            opacity: 1;
-            content: "Believe";
-        }
-        20% {
-            opacity: 1;
-            content: "Clarity";
-        }
-        25% {
-            opacity: 1;
-            content: "Challenge";
-        }
-        30% {
-            opacity: 1;
-            content: "Commitment";
-        }
-        35% {
-            opacity: 1;
-            content: "Confidence";
-        }
-        40% {
-            opacity: 1;
-            content: "Courage";
-        }
-        45% {
-            opacity: 1;
-            content: "Dare";
-        }
-        50% {
-            opacity: 1;
-            content: "Determination";
-        }
-        55% {
-            opacity: 1;
-            content: "Drive";
-        }
-        60% {
-            opacity: 1;
-            content: "Envision";
-        }
-        65% {
-            opacity: 1;
-            content: "Excellence";
-        }
-        70% {
-            opacity: 1;
-            content: "Focus";
-        }
-        75% {
-            opacity: 1;
-            content: "Fulfillment";
-        }
-        80% {
-            opacity: 1;
-            content: "Goals";
-        }
-        85% {
-            opacity: 1;
-            content: "Gratitude";
-        }
-        90% {
-            opacity: 1;
-            content: "Honesty";
-        }
-        95% {
-            opacity: 1;
-            content: "Imagination";
-        }
-        100% {
-            opacity: 1;
-            content: "Opportunity";
-        }
+  @keyframes motivational-anim {
+    0% {
+      opacity: 1;
+      content: "Accomplish";
     }
+    5% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+      content: "Ambition";
+    }
+
+    15% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+      content: "Clarity";
+    }
+    25% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+      content: "Commitment";
+    }
+    35% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+      content: "Confidence";
+    }
+    45% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      content: "Determination";
+    }
+    55% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+      content: "Excellence";
+    }
+    65% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+      content: "Focus";
+    }
+    75% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+      content: "Gratitude";
+    }
+    85% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 1;
+      content: "Imagination";
+    }
+    95% {
+      opacity: 0;
+    }
+    99% {
+      opacity: 1;
+      content: "Opportunity";
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }
 
 .btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
 }
 
 .login-btn {
-    @include button(white, black)
-  }
-
-.signup-btn {
-    @include button(white, black)
+  @include button(white, black);
 }
 
-@media screen and (orientation:portrait) {
-    .btns {
-        flex-direction: column;
-        gap: 0;
-    }
+.signup-btn {
+  @include button(white, black);
+}
 
-    .btns button {
-        margin: 5% 0%;
-    }
+@media screen and (orientation: portrait) {
+
+  .landing-container {
+    background-image: url('../../../imgs/motion-illusion.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .btns button {
+    margin: 5% 0%;
+  }
 }

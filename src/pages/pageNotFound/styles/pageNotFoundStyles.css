@@ -103,6 +103,11 @@
     left: 0%;
   }
 }
+@media screen and (orientation: portrait) {
+  .bg-animations div {
+    display: none;
+  }
+}
 neon {
   background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
   -webkit-text-fill-color: transparent;

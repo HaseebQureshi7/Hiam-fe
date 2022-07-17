@@ -187,21 +187,22 @@ neon {
 
 .quotes {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 900;
 }
 
 .quotes::after {
+  opacity: 0;
   color: white;
   content: "Accomplish";
+  text-transform: uppercase;
   text-decoration: line-through;
   -webkit-text-decoration-skip-ink: all;
           text-decoration-skip-ink: all;
   -webkit-text-decoration-color: rgba(255, 235, 205, 0.082);
           text-decoration-color: rgba(255, 235, 205, 0.082);
-  text-transform: uppercase;
-  -webkit-animation: motivational-anim 20s infinite 1s;
-          animation: motivational-anim 20s infinite 1s;
+  -webkit-animation: motivational-anim 20s ease-in-out 1s infinite;
+          animation: motivational-anim 20s ease-in-out 1s infinite;
 }
 @-webkit-keyframes motivational-anim {
   0% {
@@ -209,84 +210,77 @@ neon {
     content: "Accomplish";
   }
   5% {
-    opacity: 1;
-    content: "Action";
+    opacity: 0;
   }
   10% {
     opacity: 1;
     content: "Ambition";
   }
   15% {
-    opacity: 1;
-    content: "Believe";
+    opacity: 0;
   }
   20% {
     opacity: 1;
     content: "Clarity";
   }
   25% {
-    opacity: 1;
-    content: "Challenge";
+    opacity: 0;
   }
   30% {
     opacity: 1;
     content: "Commitment";
   }
   35% {
-    opacity: 1;
-    content: "Confidence";
+    opacity: 0;
   }
   40% {
     opacity: 1;
-    content: "Courage";
+    content: "Confidence";
   }
   45% {
-    opacity: 1;
-    content: "Dare";
+    opacity: 0;
   }
   50% {
     opacity: 1;
     content: "Determination";
   }
   55% {
-    opacity: 1;
-    content: "Drive";
+    opacity: 0;
   }
   60% {
     opacity: 1;
-    content: "Envision";
+    content: "Excellence";
   }
   65% {
-    opacity: 1;
-    content: "Excellence";
+    opacity: 0;
   }
   70% {
     opacity: 1;
     content: "Focus";
   }
   75% {
-    opacity: 1;
-    content: "Fulfillment";
+    opacity: 0;
   }
   80% {
     opacity: 1;
-    content: "Goals";
+    content: "Gratitude";
   }
   85% {
-    opacity: 1;
-    content: "Gratitude";
+    opacity: 0;
   }
   90% {
     opacity: 1;
-    content: "Honesty";
-  }
-  95% {
-    opacity: 1;
     content: "Imagination";
   }
-  100% {
+  95% {
+    opacity: 0;
+  }
+  99% {
     opacity: 1;
     content: "Opportunity";
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes motivational-anim {
@@ -295,84 +289,77 @@ neon {
     content: "Accomplish";
   }
   5% {
-    opacity: 1;
-    content: "Action";
+    opacity: 0;
   }
   10% {
     opacity: 1;
     content: "Ambition";
   }
   15% {
-    opacity: 1;
-    content: "Believe";
+    opacity: 0;
   }
   20% {
     opacity: 1;
     content: "Clarity";
   }
   25% {
-    opacity: 1;
-    content: "Challenge";
+    opacity: 0;
   }
   30% {
     opacity: 1;
     content: "Commitment";
   }
   35% {
-    opacity: 1;
-    content: "Confidence";
+    opacity: 0;
   }
   40% {
     opacity: 1;
-    content: "Courage";
+    content: "Confidence";
   }
   45% {
-    opacity: 1;
-    content: "Dare";
+    opacity: 0;
   }
   50% {
     opacity: 1;
     content: "Determination";
   }
   55% {
-    opacity: 1;
-    content: "Drive";
+    opacity: 0;
   }
   60% {
     opacity: 1;
-    content: "Envision";
+    content: "Excellence";
   }
   65% {
-    opacity: 1;
-    content: "Excellence";
+    opacity: 0;
   }
   70% {
     opacity: 1;
     content: "Focus";
   }
   75% {
-    opacity: 1;
-    content: "Fulfillment";
+    opacity: 0;
   }
   80% {
     opacity: 1;
-    content: "Goals";
+    content: "Gratitude";
   }
   85% {
-    opacity: 1;
-    content: "Gratitude";
+    opacity: 0;
   }
   90% {
     opacity: 1;
-    content: "Honesty";
-  }
-  95% {
-    opacity: 1;
     content: "Imagination";
   }
-  100% {
+  95% {
+    opacity: 0;
+  }
+  99% {
     opacity: 1;
     content: "Opportunity";
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -440,6 +427,12 @@ neon {
 }
 
 @media screen and (orientation: portrait) {
+  .landing-container {
+    background-image: url("../../../imgs/motion-illusion.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+  }
   .btns {
     flex-direction: column;
     gap: 0;
