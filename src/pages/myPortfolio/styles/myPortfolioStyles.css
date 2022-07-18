@@ -170,12 +170,18 @@ neon {
             background-clip: text;
   }
 }
+.black-bg {
+  background-color: rgb(20, 20, 20);
+}
+
 .portfolio-container {
   display: flex;
   flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 75%;
   margin: auto;
-  background-color: #f5f5f5;
+  color: #cad3d1;
+  background-color: #121212;
 }
 
 .navbar {
@@ -202,6 +208,8 @@ neon {
   width: 75%;
   height: auto;
   border-radius: 100%;
+  box-shadow: rgba(26, 187, 236, 0.2) 0px 1px 50px;
+  border: 3px solid #19b7d3;
 }
 .upper-profile .profile-stats {
   display: flex;
@@ -211,16 +219,16 @@ neon {
 }
 .upper-profile .profile-stats .user-name {
   font-size: 1.25rem;
-  color: #293462;
+  color: #ffffff;
 }
 .upper-profile .profile-stats .user-profile {
   font-size: 1.25rem;
-  color: #d61c4e;
+  color: #d018e0;
 }
 .upper-profile .profile-stats .user-bio {
   font-weight: 700;
   text-transform: uppercase;
-  color: rgb(19, 19, 19);
+  color: #19b7d3;
 }
 
 .personal-data {
@@ -229,11 +237,11 @@ neon {
   text-align: center;
   padding: 5% 5%;
 }
-.personal-data h3 {
-  color: rgb(19, 19, 19);
+.personal-data h6 {
+  color: #d018e0;
 }
 .personal-data h1 {
-  color: #293462;
+  color: #ffffff;
   font-size: 2.5rem;
 }
 
@@ -243,7 +251,6 @@ neon {
     flex-direction: column;
     width: 100%;
     margin: auto;
-    background-color: #f5f5f5;
   }
   .navbar {
     display: flex;
@@ -275,8 +282,6 @@ neon {
   .upper-profile .profile-picture img {
     width: 50%;
     height: auto;
-    border: 3px solid rgba(0, 255, 255, 0.678);
-    border-style: dotted;
     border-radius: 100%;
   }
   .upper-profile .profile-stats {

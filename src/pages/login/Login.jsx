@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 import AnimatedPage from '../../components/animator';
 import "./styles/loginStyles.css";
@@ -13,6 +14,9 @@ export default function Login() {
   return (
     <AnimatedPage>
     <>
+    <Helmet>
+      <title>Login to HiAM</title>
+    </Helmet>
       <div className="login-container">
         <div className="bg-animations">
           <div className="circle"></div>

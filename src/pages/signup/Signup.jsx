@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 import AnimatedPage from '../../components/animator';
 import "./styles/signupStyles.css";
@@ -13,6 +14,9 @@ export default function Signup() {
   return (
     <AnimatedPage>
     <>
+    <Helmet>
+      <title>Signup to HiAM</title>
+    </Helmet>
       <div className="signup-container">
         <div className="bg-animations">
           <div className="circle"></div>
