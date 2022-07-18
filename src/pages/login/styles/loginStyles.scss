@@ -10,6 +10,10 @@
   width: 100vw;
   color: white;
   background-color: black;
+  background-image: url("../../../imgs/human-pattern.gif");
+  background-size: 80vh;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .maintext {
@@ -31,9 +35,7 @@
 
 @media screen and (orientation: portrait) {
   .login-container {
-    background-image: url("../../../imgs/motion-illusion.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
     justify-content: space-evenly;
   }
 

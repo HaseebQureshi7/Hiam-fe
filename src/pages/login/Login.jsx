@@ -15,15 +15,15 @@ export default function Login() {
     <AnimatedPage>
     <>
     <Helmet>
-      <title>Login to HiAM</title>
+      <title>LOGIN</title>
     </Helmet>
       <div className="login-container">
-        <div className="bg-animations">
+        {/* <div className="bg-animations">
           <div className="circle"></div>
           <div className="circle1"></div>
           <div className="square"></div>
           <div className="square2"></div>
-        </div>
+        </div> */}
         <div className="maintext">
           <h1>LOGIN TO <neon>HiAM</neon></h1>
         </div>

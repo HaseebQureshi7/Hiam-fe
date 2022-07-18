@@ -15,15 +15,15 @@ export default function Signup() {
     <AnimatedPage>
     <>
     <Helmet>
-      <title>Signup to HiAM</title>
+      <title>SIGNUP</title>
     </Helmet>
       <div className="signup-container">
-        <div className="bg-animations">
+        {/* <div className="bg-animations">
           <div className="circle"></div>
           <div className="circle1"></div>
           <div className="square"></div>
           <div className="square2"></div>
-        </div>
+        </div> */}
         <div className="maintext">
           <h1>SIGNUP TO <neon>HiAM</neon></h1>
         </div>

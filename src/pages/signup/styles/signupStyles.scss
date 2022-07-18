@@ -8,6 +8,10 @@
   min-height: 100vh;
   color: white;
   background-color: black;
+  background-image: url('../../../imgs/human-pattern.gif');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .signup-container div {
@@ -34,9 +38,6 @@
 @media screen and (orientation:portrait) {
 
   .signup-container {
-    background-image: url('../../../imgs/motion-illusion.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
     justify-content: space-evenly;
   }
 

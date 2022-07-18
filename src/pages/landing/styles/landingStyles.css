@@ -178,6 +178,10 @@ neon {
   height: 100vh;
   width: 100vw;
   background-color: black;
+  background-image: url("../../../imgs/human-pattern.gif");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .logo img {
@@ -428,9 +432,6 @@ neon {
 
 @media screen and (orientation: portrait) {
   .landing-container {
-    background-image: url("../../../imgs/motion-illusion.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
     justify-content: space-evenly;
   }
   .btns {
