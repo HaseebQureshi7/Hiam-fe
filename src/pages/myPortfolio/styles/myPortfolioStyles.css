@@ -208,8 +208,16 @@ neon {
   width: 75%;
   height: auto;
   border-radius: 100%;
-  box-shadow: rgba(26, 187, 236, 0.2) 0px 1px 50px;
   border: 3px solid #19b7d3;
+  box-shadow: rgba(26, 187, 236, 0.2) 0px 1px 25px;
+}
+.upper-profile .profile-picture img:hover {
+  box-shadow: rgba(26, 187, 236, 0.2) 0px 1px 75px;
+  transition: all 0.5s;
+}
+.upper-profile .profile-picture img:not(:hover) {
+  box-shadow: rgba(26, 187, 236, 0.2) 0px 1px 25px;
+  transition: all 0.3s;
 }
 .upper-profile .profile-stats {
   display: flex;
