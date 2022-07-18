@@ -54,7 +54,7 @@ export default function MyPortfolio() {
                         </div>
                         <div className="location">
                             <h6>LOCATION</h6>
-                            <h1>J&K INDIA</h1>
+                            <h1>J&K, INDIA</h1>
                         </div>
                     </div>
                 </div>

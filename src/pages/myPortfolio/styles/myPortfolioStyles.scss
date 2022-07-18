@@ -88,6 +88,9 @@
     color: $primary_color;
     font-size: 2.5rem;
   }
+  .location h1{
+    word-break: break-all;
+  }
 }
 
 @media screen and (orientation: portrait) {

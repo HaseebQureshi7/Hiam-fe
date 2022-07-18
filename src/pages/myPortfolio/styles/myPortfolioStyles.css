@@ -244,6 +244,9 @@ neon {
   color: #ffffff;
   font-size: 2.5rem;
 }
+.personal-data .location h1 {
+  word-break: break-all;
+}
 
 @media screen and (orientation: portrait) {
   .portfolio-container {
