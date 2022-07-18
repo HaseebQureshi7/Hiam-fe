@@ -45,8 +45,16 @@
     width: 75%;
     height: auto;
     border-radius: 100%;
-    box-shadow: rgba(26, 187, 236, 0.2) 0px 1px 50px;
-    border: 3px solid $secondary_color
+    border: 3px solid $secondary_color;
+    box-shadow: rgba(26, 187, 236, 0.2) 0px 1px 25px;
+    &:hover {
+      box-shadow: rgba(26, 187, 236, 0.2) 0px 1px 75px;
+      transition: all 0.5s;
+    }
+    &:not(:hover) {
+      box-shadow: rgba(26, 187, 236, 0.2) 0px 1px 25px;
+      transition: all 0.3s;
+    }
   }
 
   .profile-stats {
@@ -88,7 +96,7 @@
     color: $primary_color;
     font-size: 2.5rem;
   }
-  .location h1{
+  .location h1 {
     word-break: break-all;
   }
 }
