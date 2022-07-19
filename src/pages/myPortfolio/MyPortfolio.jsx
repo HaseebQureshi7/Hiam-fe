@@ -1,7 +1,14 @@
 import "./styles/myPortfolioStyles.css"
 import AnimatedPage from "../../components/animator"
 import { Helmet } from "react-helmet"
+import SkillsTab from "./skillsTab/SkillsTab"
+import ProjectsTab from "./projectsTab/ProjectsTab"
+import { useEffect, useState } from "react"
 export default function MyPortfolio() {
+    const [activeTab, setActiveTab] = useState(<ProjectsTab/>);
+    const [isProjectActive, setIsProjectsActive] = useState("");
+    const [isSkillsActive, setIsSkillsActive] = useState("disabled");
+    
     return (
         <AnimatedPage>
             <Helmet>
@@ -54,8 +61,20 @@ export default function MyPortfolio() {
                         </div>
                         <div className="location">
                             <h6>LOCATION</h6>
-                            <h1>J&K, INDIA</h1>
+                            <h1>INDIA</h1>
                         </div>
+                    </div>
+                    <div className="project_skill-bar">
+                        <div className="bar-headings">
+                            <div className={"projects-heading "+isProjectActive}>
+                                <h1 onClick={()=> {setActiveTab(<ProjectsTab/>); setIsProjectsActive(""); setIsSkillsActive("disabled")}}>PROJECTS</h1>
+                            </div>
+                            <div className={"skills-heading "+ isSkillsActive}>
+                                <h1 onClick={()=> {setActiveTab(<SkillsTab/>); setIsSkillsActive(""); setIsProjectsActive("disabled") }}>SKILLS</h1>
+                            </div>
+                        </div>
+                        {activeTab}
+                    {/* <SkillsTab/> */}
                     </div>
                 </div>
             </div>

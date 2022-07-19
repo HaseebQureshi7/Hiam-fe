@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Montserrat;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .bg-animations div {
@@ -170,14 +175,6 @@ neon {
             background-clip: text;
   }
 }
-* {
-  -ms-overflow-style: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
 .login-container {
   display: flex;
   flex-direction: column;

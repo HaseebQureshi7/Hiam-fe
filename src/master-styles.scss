@@ -1,16 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-$default-color : #cad3d1;
+$default-color: #cad3d1;
 $primary_color: #ffffff;
 $secondary_color: #19b7d3;
 $accent_color: #d018e0;
-$background-color : #121212;
+$background-color: #121212;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Montserrat;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 // BUTTONS
@@ -119,7 +124,7 @@ $background-color : #121212;
   }
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (orientation: portrait) {
   .bg-animations div {
     display: none;
   }
@@ -133,7 +138,6 @@ neon {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: grad-anim infinite 2s ease-in-out;
-  
 }
 
 @keyframes grad-anim {
@@ -162,7 +166,7 @@ neon {
 // EFFECTS END
 
 // INPUT FIELDS
-@mixin inputFields ($size) {
+@mixin inputFields($size) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,11 +174,10 @@ neon {
 
   label {
     margin: 10px 0px;
-
   }
 
   input {
-    width: $size+vw;
+    width: $size + vw;
     height: 50px;
     font-size: 1rem;
     padding: 10px 30px;

@@ -101,6 +101,40 @@
   }
 }
 
+.project_skill-bar {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $default-color;
+  width: 100%;
+  height: auto;
+  background-color: $background-color;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px -7px 29px 0px;
+  .bar-headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+    height: auto;
+    h1 {
+      padding: 10% 0%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES
+
 @media screen and (orientation: portrait) {
   .portfolio-container {
     display: flex;
@@ -167,4 +201,12 @@
       font-size: 1.5rem;
     }
   }
+  .project_skill-bar {
+    .bar-headings {
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+  
 }

@@ -1,12 +1,5 @@
 @import "../../../master-styles.scss";
 
-*{
-  -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-
 .login-container {
   display: flex;
   flex-direction: column;
