@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-animations div {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  filter: blur(100px);
+}
+
+.bg-animations .circle {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: red;
+  -webkit-animation: bg-anim ease-in-out 20s alternate infinite;
+          animation: bg-anim ease-in-out 20s alternate infinite;
+}
+
+.bg-animations .circle1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(251, 255, 0);
+  -webkit-animation: bg-anim ease-in-out 15s alternate infinite;
+          animation: bg-anim ease-in-out 15s alternate infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.bg-animations .square {
+  position: absolute;
+  border-radius: 0%;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(255, 0, 191);
+  -webkit-animation: bg-anim ease-in-out 20s alternate infinite;
+          animation: bg-anim ease-in-out 20s alternate infinite;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.bg-animations .square2 {
+  position: absolute;
+  border-radius: 0%;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(0, 110, 255);
+  -webkit-animation: bg-anim ease-in-out 15s alternate infinite;
+          animation: bg-anim ease-in-out 15s alternate infinite;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes bg-anim {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  30% {
+    top: 25%;
+    left: 25%;
+  }
+  60% {
+    top: 50%;
+    left: 50%;
+  }
+  90% {
+    top: 65%;
+    left: 65%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+
+@keyframes bg-anim {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  30% {
+    top: 25%;
+    left: 25%;
+  }
+  60% {
+    top: 50%;
+    left: 50%;
+  }
+  90% {
+    top: 65%;
+    left: 65%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+@media screen and (orientation: portrait) {
+  .bg-animations div {
+    display: none;
+  }
+}
+neon {
+  background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-animation: grad-anim infinite 2s ease-in-out;
+          animation: grad-anim infinite 2s ease-in-out;
+}
+
+@-webkit-keyframes grad-anim {
+  30% {
+    background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  60% {
+    background: linear-gradient(to right, #ff6b08, #ff6b08, #ff0898);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  90% {
+    background: linear-gradient(to right, #ff0898, #ff0898, #08ff31);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to right, #08ff31, #08ff31, #ff0808);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+}
+
+@keyframes grad-anim {
+  30% {
+    background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  60% {
+    background: linear-gradient(to right, #ff6b08, #ff6b08, #ff0898);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  90% {
+    background: linear-gradient(to right, #ff0898, #ff0898, #08ff31);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  100% {
+    background: linear-gradient(to right, #08ff31, #08ff31, #ff0808);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+}
+.edit-profile-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 75%;
+  margin: auto;
+  color: #cad3d1;
+  background-color: #121212;
+}
+
+.edit-profile-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+  width: 100%;
+  height: 10%;
+}
+.edit-profile-navbar .edit-profile-title-text {
+  font-size: 1.5rem;
+}
+.edit-profile-navbar .edit-profile-options {
+  min-width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.edit-profile-navbar .edit-profile-options i:hover {
+  transform: scale(1.05);
+  filter: brightness(200);
+  box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+  transition: all 0.5s;
+}
+.edit-profile-navbar .edit-profile-options i:not(:hover) {
+  transform: scale(1);
+  filter: brightness(100);
+  transition: all 0.5s;
+}
+
+.profile-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+}
+.profile-edit div {
+  padding: 1%;
+}
+.profile-edit .profile-edit-header {
+  text-align: center;
+}
+.profile-edit .edit-profile-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.profile-edit .edit-profile-picture img {
+  width: 25%;
+  border-radius: 100%;
+}
+.profile-edit .edit-profile-picture i:hover {
+  transform: scale(1.05);
+  filter: brightness(200);
+  box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+  transition: all 0.5s;
+}
+.profile-edit .edit-profile-picture i:not(:hover) {
+  transform: scale(1);
+  filter: brightness(100);
+  transition: all 0.5s;
+}
+.profile-edit .edit-username,
+.profile-edit .edit-position,
+.profile-edit .edit-password,
+.profile-edit .edit-conform-password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.profile-edit .edit-username label,
+.profile-edit .edit-position label,
+.profile-edit .edit-password label,
+.profile-edit .edit-conform-password label {
+  margin: 10px 0px;
+}
+.profile-edit .edit-username input,
+.profile-edit .edit-position input,
+.profile-edit .edit-password input,
+.profile-edit .edit-conform-password input {
+  width: 50vw;
+  height: 50px;
+  font-size: 1rem;
+  padding: 10px 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+}
+.profile-edit .edit-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.profile-edit .edit-bio label {
+  margin: 10px 0px;
+}
+.profile-edit .edit-bio textarea {
+  width: 50vw;
+  height: 75px;
+  font-size: 1rem;
+  padding: 10px 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+.profile-edit .conform-changes-btn {
+  width: 100%;
+  text-align: center;
+}
+.profile-edit .conform-changes-btn .conform-changes-btn button {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 10px 50px;
+  border-radius: 2px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: white;
+  color: black;
+}
+.profile-edit .conform-changes-btn .conform-changes-btn button:hover {
+  filter: invert(1);
+  transform: scale(1.1);
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.profile-edit .conform-changes-btn .conform-changes-btn button:not(:hover) {
+  filter: invert(0);
+  transform: scale(1);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+}
+.edit-projects-container .edit-projects-header {
+  text-align: center;
+}
+.edit-projects-container .project-edit-tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+}
+.edit-projects-container .project-edit-tab .fa-edit {
+  color: #19b7d3;
+}
+.edit-projects-container .project-edit-tab .fa-trash {
+  color: red;
+}
+
+.edit-skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+  height: 50vh;
+}
+.edit-skills-container .edit-skills-header {
+  text-align: center;
+}
+.edit-skills-container .edit-skill-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.edit-skills-container .edit-skill-tabs .edit-skill-tab {
+  display: flex;
+  padding: 1%;
+  margin: auto;
+  width: 35%;
+  justify-content: space-between;
+  text-align: start;
+}
+.edit-skills-container .edit-skill-tabs .edit-skill-tab .fa-trash {
+  color: red;
+}
+.edit-skills-container .conform-changes-btn {
+  text-align: center;
+}
+
+hr {
+  align-self: center;
+  width: 75%;
+  margin: 10% 0;
+}
+
+@media screen and (orientation: portrait) {
+  .edit-profile-container {
+    width: 100%;
+  }
+  .profile-edit {
+    margin-top: 5%;
+  }
+  .profile-edit .edit-username,
+.profile-edit .edit-position,
+.profile-edit .edit-password,
+.profile-edit .edit-conform-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .profile-edit .edit-username label,
+.profile-edit .edit-position label,
+.profile-edit .edit-password label,
+.profile-edit .edit-conform-password label {
+    margin: 10px 0px;
+  }
+  .profile-edit .edit-username input,
+.profile-edit .edit-position input,
+.profile-edit .edit-password input,
+.profile-edit .edit-conform-password input {
+    width: 90vw;
+    height: 50px;
+    font-size: 1rem;
+    padding: 10px 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+  }
+  .profile-edit .edit-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .profile-edit .edit-bio label {
+    margin: 10px 0px;
+  }
+  .profile-edit .edit-bio textarea {
+    width: 90vw;
+    height: 90px;
+    font-size: 1rem;
+    padding: 10px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+  }
+  .profile-edit .conform-changes-btn {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  .profile-edit .conform-changes-btn .conform-changes-btn button {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    padding: 10px 50px;
+    border-radius: 2px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+  }
+  .profile-edit .conform-changes-btn .conform-changes-btn button:hover {
+    filter: invert(1);
+    transform: scale(1.1);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+  .profile-edit .conform-changes-btn .conform-changes-btn button:not(:hover) {
+    filter: invert(0);
+    transform: scale(1);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+}/*# sourceMappingURL=editProfileStyles.css.map */

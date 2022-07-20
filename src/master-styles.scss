@@ -47,6 +47,34 @@ $background-color: #121212;
   }
 }
 
+@mixin small-button($fg-col, $bg-col) {
+  max-width: fit-content;
+  max-height: fit-content;
+  padding: 10px 50px;
+  border-radius: 2px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: $bg-col;
+  color: $fg-col;
+
+  &:hover {
+    filter: invert(1);
+    // padding: 15px 55px;
+    transform: scale(1.1);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:not(:hover) {
+    filter: invert(0);
+    // padding: 10px 50px;
+    transform: scale(1);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
 // BUTTONS END
 
 // BACKGROUND-ANIMATIONS
@@ -184,5 +212,25 @@ neon {
     font-weight: bold;
     border: none;
     border-radius: 50px;
+  }
+}
+@mixin inputAreaFields($length, $width) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  label {
+    margin: 10px 0px;
+  }
+
+  textarea {
+    width: $width + vw;
+    height: $length + px;
+    font-size: 1rem;
+    padding: 10px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
   }
 }

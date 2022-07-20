@@ -1,10 +1,47 @@
+import { motion } from 'framer-motion';
 import AnimatedPage from '../../../components/animator';
 import './styles/skillTabstyles.css';
 
 export default function SkillsTab() {
   return (
-    <AnimatedPage>
-      <div className="skills-tab">
+    <motion.div
+      initial={{
+        opacity: 0,
+        scale: 0.7,
+        x: "-25vw"
+      }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+        x: "0"
+      }}
+      exit={{
+        opacity: 0,
+        scale: 0.7,
+        x: "-25vw"
+      }}
+      transition={{
+        duration: 0.5,
+        delayChildren:0.5
+      }}
+    >
+      <motion.div
+        initial={{
+          opacity: 0,
+          scale: 0.5,
+          x: "-25vw"
+        }}
+        animate={{
+          opacity: 1,
+          scale: 1,
+          x: "0"
+        }}
+        exit={{
+          opacity: 0,
+          scale: 0.5,
+          x: "-25vw"
+        }}
+        className="skills-tab">
         <div className="skill">
           <div className="skill-name">
             <h1>HTML</h1>
@@ -69,7 +106,7 @@ export default function SkillsTab() {
             <h1>BEGINNER</h1>
           </div>
         </div>
-      </div>
-    </AnimatedPage>
+      </motion.div>
+    </motion.div>
   )
 }

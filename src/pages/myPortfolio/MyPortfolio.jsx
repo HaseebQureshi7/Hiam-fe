@@ -3,11 +3,13 @@ import AnimatedPage from "../../components/animator"
 import { Helmet } from "react-helmet"
 import SkillsTab from "./skillsTab/SkillsTab"
 import ProjectsTab from "./projectsTab/ProjectsTab"
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 export default function MyPortfolio() {
     const [activeTab, setActiveTab] = useState(<ProjectsTab/>);
     const [isProjectActive, setIsProjectsActive] = useState("");
     const [isSkillsActive, setIsSkillsActive] = useState("disabled");
+    const navigation = useNavigate();
     
     return (
         <AnimatedPage>
@@ -25,7 +27,7 @@ export default function MyPortfolio() {
                         <div className="options">
                             <i className="fas fa-external-link fa-xl"></i>
                             <i className="fas fa-home fa-xl"></i>
-                            <i className="fas fa-edit fa-xl"></i>
+                            <i onClick={()=> navigation('/EditProfile')} className="fas fa-edit fa-xl"></i>
                         </div>
                     </div>
                     <div className="upper-profile">
@@ -51,13 +53,13 @@ export default function MyPortfolio() {
                         </div>
                     </div>
                     <div className="personal-data">
-                        <div className="experience">
-                            <h6>TOTAL EXPERIENCE</h6>
-                            <h1>1 YEAR</h1>
-                        </div>
                         <div className="qualification">
                             <h6>QUALIFICATION</h6>
                             <h1>BCA</h1>
+                        </div>
+                        <div className="experience">
+                            <h6>TOTAL EXPERIENCE</h6>
+                            <h1>1 YEAR</h1>
                         </div>
                         <div className="location">
                             <h6>LOCATION</h6>

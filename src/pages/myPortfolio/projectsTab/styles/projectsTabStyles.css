@@ -185,21 +185,22 @@ neon {
 .project-tab div {
   width: 33.3%;
   height: 33.3%;
+  overflow: hidden;
   padding: 0.25% 0.5%;
 }
 .project-tab div img {
   width: 100%;
   height: 100%;
 }
-.project-tab div:hover {
-  transform: scale(1.005);
+.project-tab div img:hover {
+  transform: scale(1.1);
   filter: contrast(1.1);
-  transition: all 0.5s;
+  transition: all 1s;
 }
-.project-tab div:not(:hover) {
+.project-tab div img:not(:hover) {
   transform: scale(1);
   filter: contrast(1);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .disabled {

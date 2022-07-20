@@ -205,6 +205,18 @@ neon {
   display: flex;
   justify-content: space-evenly;
 }
+.navbar .options i:hover {
+  transform: scale(1.05);
+  filter: brightness(200);
+  box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+  transition: all 0.5s;
+}
+.navbar .options i:not(:hover) {
+  transform: scale(1);
+  filter: brightness(100);
+  transition: all 0.5s;
+}
+
 .upper-profile {
   display: flex;
   padding: 5%;
@@ -279,7 +291,7 @@ neon {
   height: auto;
 }
 .project_skill-bar .bar-headings h1 {
-  padding: 10% 0%;
+  padding: 15% 0%;
 }
 
 @media screen and (orientation: portrait) {
@@ -338,6 +350,7 @@ neon {
     font-size: 1.5rem;
   }
   .project_skill-bar .bar-headings h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    padding: 15% 0;
   }
 }/*# sourceMappingURL=myPortfolioStyles.css.map */

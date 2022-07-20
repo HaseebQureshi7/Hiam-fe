@@ -31,6 +31,17 @@
     justify-content: space-evenly;
     i {
       // padding: 0 10%;
+      &:hover {
+        transform: scale(1.05);
+        filter: brightness(200);
+        box-shadow: rgba(255, 255, 255, 1) 0px 7px 29px 0px;
+        transition: all 0.5s;
+      }
+      &:not(:hover) {
+        transform: scale(1);
+        filter: brightness(100);
+        transition: all 0.5s;
+      }
     }
   }
 }
@@ -117,21 +128,10 @@
     margin: auto;
     height: auto;
     h1 {
-      padding: 10% 0%;
+      padding: 15% 0%;
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // MEDIA QUERIES
 
@@ -204,9 +204,9 @@
   .project_skill-bar {
     .bar-headings {
       h1 {
-        font-size: 1rem;
+        font-size: 1.25rem;
+        padding: 15% 0;
       }
     }
   }
-  
 }
