@@ -1,8 +1,10 @@
 import AnimatedPage from '../../../components/animator'
 import { motion } from 'framer-motion'
 import './styles/projectsTabStyles.css'
+import { useNavigate } from 'react-router-dom'
 
 export default function ProjectsTab() {
+  const navigation = useNavigate();
   return (
     <motion.div
       initial={{
@@ -43,7 +45,7 @@ export default function ProjectsTab() {
         }}
         className="project-tab">
         <div className="project1">
-          <img src={require("../../../imgs/projects/Zeymal-banner.jpg")} alt="user-porject" />
+          <img onClick={()=> {navigation('/ProjectsPage'); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} src={require("../../../imgs/projects/Zeymal-banner.jpg")} alt="user-porject" />
         </div>
         <div className="project2">
           <img src={require("../../../imgs/projects/passforpash.jpg")} alt="user-porject" />

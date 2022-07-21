@@ -7,6 +7,7 @@ import Signup from "./pages/signup/Signup";
 import MyPortfolio from "./pages/myPortfolio/MyPortfolio";
 import EditProfile from "./pages/editProfile/EditProfile";
 import Home from "./pages/home/Home";
+import ProjectsPage from "./pages/projectsPage/ProjectsPage";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="Myportfolio" element={<MyPortfolio/>} />
           <Route path="EditProfile" element={<EditProfile/>} />
           <Route path="Home" element={<Home/>} />
+          <Route path="ProjectsPage" element={<ProjectsPage/>} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </AnimatePresence>
