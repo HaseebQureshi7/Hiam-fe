@@ -24,10 +24,12 @@ export default function Landing() {
                     <div className="quotes">
                         <h1> </h1>
                     </div>
+                    <AnimatedPage>
                     <div className="btns">
                         <button onClick={() => navigate('/login')} className="login-btn">LOGIN</button>
                         <button onClick={() => navigate('/signup')} className="signup-btn">SIGNUP</button>
                     </div>
+                    </AnimatedPage>
                 </div>
             </>
         </AnimatedPage>
