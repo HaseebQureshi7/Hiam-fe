@@ -26,7 +26,7 @@ export default function MyPortfolio() {
                         </div>
                         <div className="options">
                             <i className="fas fa-external-link fa-xl"></i>
-                            <i className="fas fa-home fa-xl"></i>
+                            <i onClick={()=> navigation('/Home')} className="fas fa-home fa-xl"></i>
                             <i onClick={()=> navigation('/EditProfile')} className="fas fa-edit fa-xl"></i>
                         </div>
                     </div>
