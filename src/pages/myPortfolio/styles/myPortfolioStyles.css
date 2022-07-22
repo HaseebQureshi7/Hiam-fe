@@ -104,22 +104,28 @@ span {
 .share-link-modal p {
   position: absolute;
   top: 45vh;
-  left: 40vw;
+  left: 50vw;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  transform: translate(-50%, -50%);
 }
 .share-link-modal h3 {
   position: absolute;
+  left: 50vw;
   top: 50vh;
-  left: 40vw;
+  transform: translate(-50%, -50%);
   color: #19b7d3;
 }
 .share-link-modal h1 {
   position: absolute;
   top: 75vh;
   left: 50vw;
+  font-weight: 100;
+  border: 1px solid #ffffff;
+  padding: 10px 25px;
+  transform: translate(-50%, -50%);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -209,6 +215,7 @@ span {
 }
 .project_skill-bar .bar-headings h1 {
   padding: 15% 0%;
+  cursor: pointer;
 }
 
 @media screen and (orientation: portrait) {
@@ -235,32 +242,6 @@ span {
   }
   .navbar .options i {
     transform: scale(0.9);
-  }
-  .share-link-modal {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.96);
-    text-align: center;
-  }
-  .share-link-modal p {
-    position: absolute;
-    top: 45vh;
-    left: 40vw;
-  }
-  .share-link-modal h3 {
-    position: absolute;
-    top: 50vh;
-    left: 15%;
-    color: #19b7d3;
-  }
-  .share-link-modal h1 {
-    position: absolute;
-    top: 75vh;
-    left: 45%;
   }
   .upper-profile {
     flex-direction: column;

@@ -58,19 +58,26 @@
   p {
     position: absolute;
     top: 45vh;
-    left: 40vw;
+    left: 50vw;
     user-select: none;
+    transform: translate(-50%, -50%);
   }
   h3 {
     position: absolute;
+    left: 50vw;
     top: 50vh;
-    left: 40vw;
+    // margin: auto;
+    transform: translate(-50%, -50%);
     color: $secondary_color;
   }
   h1 {
     position: absolute;
     top: 75vh;
     left: 50vw;
+    font-weight: 100;
+    border: 1px solid $primary_color;
+    padding: 10px 25px;
+    transform: translate(-50%, -50%);
     user-select: none;
   }
   h6 {
@@ -167,6 +174,7 @@
     height: auto;
     h1 {
       padding: 15% 0%;
+      cursor: pointer;
     }
   }
 }
@@ -198,34 +206,6 @@
       i {
         transform: scale(0.9);
       }
-    }
-  }
-
-  .share-link-modal {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.96);
-    text-align: center;
-    p {
-      position: absolute;
-      top: 45vh;
-      left: 40vw;
-    }
-    h3 {
-      position: absolute;
-      top: 50vh;
-      left: 15%;
-      color: $secondary_color;
-    }
-    h1 {
-      position: absolute;
-      // transform: scale(1.5);
-      top: 75vh;
-      left: 45%;
     }
   }
 

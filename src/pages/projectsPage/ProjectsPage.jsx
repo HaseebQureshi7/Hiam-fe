@@ -7,7 +7,7 @@ import { useEffect } from "react"
 
 export default function ProjectsPage() {
     const navigation = useNavigate()
-    
+
     // useEffect(() => {
     //     // 👇️ scroll to top on page load
     //     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -27,24 +27,24 @@ export default function ProjectsPage() {
                             </h1>
                         </div>
                         <div className="project-page-options">
-                            <i className="fas fa-external-link fa-xl"></i>
+                            {/* <i className="fas fa-external-link fa-xl"></i> */}
                             <i onClick={() => navigation("/MyPortfolio")} className="fas fa-arrow-right fa-xl"></i>
                         </div>
                     </div>
+                    <motion.div
+                        initial={{ scale: 1, y: -50, opacity: 0 }}
+                        animate={{ scale: 1, y: 0, opacity: 1 }}
+                        exit={{ scale: 1, y: 200, opacity: 0 }}
+                        transition={{ duration: 1 }}
+                        className="project-page-hero-image">
+                        <img src={require("../../imgs/projects/Zeymal-banner.jpg")} alt="" />
+                    </motion.div>
                     <div className="project-page-title">
                         <h1>ZEYMAL EDUCATIONAL ERP</h1>
                     </div>
-                    <motion.div
-                        initial={{scale:1, y:-50, opacity:0}}
-                        animate={{scale:1, y:0, opacity:1}}
-                        exit={{scale:1, y:200, opacity:0}}
-                        transition={{duration:1}}
-                    className="project-page-hero-image">
-                        <img src={require("../../imgs/projects/Zeymal-banner.jpg")} alt="" />
-                    </motion.div>
                     <div className="project-page-stats">
                         <div className="project-page-role">
-                            <h3>ROLE : FRONTEND DEVELOPER</h3>
+                            <h3>ROLE : <strong>FRONTEND DEVELOPER</strong></h3>
                         </div>
                         <div className="project-page-tech-stack">
                             <ul>
