@@ -25,7 +25,7 @@ export default function Login() {
           <div className="square2"></div>
         </div> */}
           <div className="maintext">
-            <h1>LOGIN TO <neon>HiAM</neon></h1>
+            <h1>LOGIN TO <span>HiAM</span></h1>
           </div>
           <AnimatedPage>
             <form onSubmit={OnSubmit}>

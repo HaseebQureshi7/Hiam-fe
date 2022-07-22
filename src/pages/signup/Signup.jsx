@@ -25,7 +25,7 @@ export default function Signup() {
           <div className="square2"></div>
         </div> */}
         <div className="maintext">
-          <h1>SIGNUP TO <neon>HiAM</neon></h1>
+          <h1>SIGNUP TO <span>HiAM</span></h1>
         </div>
         <form onSubmit={OnSubmit}>
           <div className="input-field">

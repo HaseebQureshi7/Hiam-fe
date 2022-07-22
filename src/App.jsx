@@ -19,10 +19,10 @@ function App() {
           <Route path="" element={<Landing />} />
           <Route path="Login" element={<Login />} />
           <Route path="Signup" element={<Signup />} />
-          <Route path="Myportfolio" element={<MyPortfolio/>} />
-          <Route path="EditProfile" element={<EditProfile/>} />
-          <Route path="Home" element={<Home/>} />
-          <Route path="ProjectsPage" element={<ProjectsPage/>} />
+          <Route path="Myportfolio" element={<MyPortfolio />} />
+          <Route path="EditProfile" element={<EditProfile />} />
+          <Route path="Home" element={<Home />} />
+          <Route path="ProjectsPage" element={<ProjectsPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </AnimatePresence>

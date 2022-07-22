@@ -4,11 +4,12 @@ import { Helmet } from "react-helmet"
 import SkillsTab from "./skillsTab/SkillsTab"
 import ProjectsTab from "./projectsTab/ProjectsTab"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 export default function MyPortfolio() {
     const [activeTab, setActiveTab] = useState(<ProjectsTab />);
     const [isProjectActive, setIsProjectsActive] = useState("");
     const [isSkillsActive, setIsSkillsActive] = useState("disabled");
+    const [shareModal, setShareModal] = useState(false);
     const navigation = useNavigate();
 
     return (
@@ -25,11 +26,19 @@ export default function MyPortfolio() {
                             </h3>
                         </div>
                         <div className="options">
-                            <i className="fas fa-external-link fa-xl"></i>
+                            <i onClick={() => { setShareModal(!shareModal) }} className="fas fa-external-link fa-xl"></i>
                             <i onClick={() => navigation('/Home')} className="fas fa-home fa-xl"></i>
                             <i onClick={() => navigation('/EditProfile')} className="fas fa-edit fa-xl"></i>
                         </div>
                     </div>
+
+                    {shareModal && <div className="share-link-modal">
+                        <p>SHARE LINK</p>
+                        <h3>{window.location.href}</h3>
+                        <h1 onClick={() => { setShareModal(!shareModal) }}>X</h1>
+                        <h4>
+                        </h4>
+                    </div>}
 
                     <div className="upper-profile">
                         <div className="profile-picture">

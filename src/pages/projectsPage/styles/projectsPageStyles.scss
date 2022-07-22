@@ -72,22 +72,28 @@
     margin: auto;
     .project-page-role {
         font-size: 2rem;
-        color: $secondary-color;
+        color: $accent-color;
     }
     .project-page-tech-stack ul {
         display: flex;
         justify-content: space-evenly;
         width: 100%;
         li {
+            font-weight: 700;
             list-style-type: none;
         }
     }
     .project-page-responsibilities {
         display: flex;
         flex-direction: column;
-        ul li{
-            list-style-type:decimal;
-            margin: 2.5% 0;
+        ul {
+            width: 90%;
+            margin: auto;
+            li{
+                list-style-type:decimal;
+                font-weight: 700;
+                padding-top: 5%;
+            }
         }
         h3 {
             color: $secondary-color;
@@ -165,7 +171,6 @@
         margin: auto;
         .project-page-role {
             font-size: 1rem;
-            color: $secondary-color;
         }
         .project-page-tech-stack ul {
             display: flex;

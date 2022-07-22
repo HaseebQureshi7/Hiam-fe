@@ -11,170 +11,44 @@
   display: none;
 }
 
-.bg-animations div {
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  filter: blur(100px);
-}
-
-.bg-animations .circle {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  background-color: red;
-  -webkit-animation: bg-anim ease-in-out 20s alternate infinite;
-          animation: bg-anim ease-in-out 20s alternate infinite;
-}
-
-.bg-animations .circle1 {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  background-color: rgb(251, 255, 0);
-  -webkit-animation: bg-anim ease-in-out 15s alternate infinite;
-          animation: bg-anim ease-in-out 15s alternate infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.bg-animations .square {
-  position: absolute;
-  border-radius: 0%;
-  top: 0%;
-  left: 0%;
-  background-color: rgb(255, 0, 191);
-  -webkit-animation: bg-anim ease-in-out 20s alternate infinite;
-          animation: bg-anim ease-in-out 20s alternate infinite;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-.bg-animations .square2 {
-  position: absolute;
-  border-radius: 0%;
-  top: 0%;
-  left: 0%;
-  background-color: rgb(0, 110, 255);
-  -webkit-animation: bg-anim ease-in-out 15s alternate infinite;
-          animation: bg-anim ease-in-out 15s alternate infinite;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  animation-direction: reverse;
-}
-
-@-webkit-keyframes bg-anim {
-  0% {
-    top: 0%;
-    left: 0%;
-  }
-  30% {
-    top: 25%;
-    left: 25%;
-  }
-  60% {
-    top: 50%;
-    left: 50%;
-  }
-  90% {
-    top: 65%;
-    left: 65%;
-  }
-  100% {
-    top: 0%;
-    left: 0%;
-  }
-}
-
-@keyframes bg-anim {
-  0% {
-    top: 0%;
-    left: 0%;
-  }
-  30% {
-    top: 25%;
-    left: 25%;
-  }
-  60% {
-    top: 50%;
-    left: 50%;
-  }
-  90% {
-    top: 65%;
-    left: 65%;
-  }
-  100% {
-    top: 0%;
-    left: 0%;
-  }
-}
-@media screen and (orientation: portrait) {
-  .bg-animations div {
-    display: none;
-  }
-}
-neon {
-  background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
-  -webkit-text-fill-color: transparent;
+span {
+  background: linear-gradient(to right, #19b7d3, #d018e0, #ffffff, lime);
   -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-animation: grad-anim infinite 2s ease-in-out;
-          animation: grad-anim infinite 2s ease-in-out;
+  color: transparent;
+  background-size: 100vw;
+  background-position: 100vw;
+  -webkit-animation: colorgrad-anim 15s infinite linear;
+          animation: colorgrad-anim 15s infinite linear;
+}
+@-webkit-keyframes colorgrad-anim {
+  0% {
+    background-position: 200vw;
+  }
+  25% {
+    background-position: 300vw;
+  }
+  50% {
+    background-position: 400vw;
+  }
+  75% {
+    background-position: 200vw;
+  }
+}
+@keyframes colorgrad-anim {
+  0% {
+    background-position: 200vw;
+  }
+  25% {
+    background-position: 300vw;
+  }
+  50% {
+    background-position: 400vw;
+  }
+  75% {
+    background-position: 200vw;
+  }
 }
 
-@-webkit-keyframes grad-anim {
-  30% {
-    background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-  60% {
-    background: linear-gradient(to right, #ff6b08, #ff6b08, #ff0898);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-  90% {
-    background: linear-gradient(to right, #ff0898, #ff0898, #08ff31);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-  100% {
-    background: linear-gradient(to right, #08ff31, #08ff31, #ff0808);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-}
-
-@keyframes grad-anim {
-  30% {
-    background: linear-gradient(to right, #0cc4e4, #0cc4e4, #ff6b08);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-  60% {
-    background: linear-gradient(to right, #ff6b08, #ff6b08, #ff0898);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-  90% {
-    background: linear-gradient(to right, #ff0898, #ff0898, #08ff31);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-  100% {
-    background: linear-gradient(to right, #08ff31, #08ff31, #ff0808);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-  }
-}
 .project-page-container {
   display: flex;
   flex-direction: column;
@@ -244,7 +118,7 @@ neon {
 }
 .project-page-stats .project-page-role {
   font-size: 2rem;
-  color: #19b7d3;
+  color: #d018e0;
 }
 .project-page-stats .project-page-tech-stack ul {
   display: flex;
@@ -252,15 +126,21 @@ neon {
   width: 100%;
 }
 .project-page-stats .project-page-tech-stack ul li {
+  font-weight: 700;
   list-style-type: none;
 }
 .project-page-stats .project-page-responsibilities {
   display: flex;
   flex-direction: column;
 }
+.project-page-stats .project-page-responsibilities ul {
+  width: 90%;
+  margin: auto;
+}
 .project-page-stats .project-page-responsibilities ul li {
   list-style-type: decimal;
-  margin: 2.5% 0;
+  font-weight: 700;
+  padding-top: 5%;
 }
 .project-page-stats .project-page-responsibilities h3 {
   color: #19b7d3;
@@ -327,7 +207,6 @@ neon {
   }
   .project-page-stats .project-page-role {
     font-size: 1rem;
-    color: #19b7d3;
   }
   .project-page-stats .project-page-tech-stack ul {
     display: flex;

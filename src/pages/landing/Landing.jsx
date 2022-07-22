@@ -12,14 +12,10 @@ export default function Landing() {
                     <title>WELCOME TO HiAM</title>
                 </Helmet>
                 <div className="landing-container">
-                    {/* <div className="bg-animations">
-                        <div className="circle"></div>
-                        <div className="circle1"></div>
-                        <div className="square"></div>
-                        <div className="square2"></div>
-                    </div> */}
                     <div className="logo">
-                        <img src={require("../../imgs/Logo-tagged.png")} alt="logo-img" />
+                        {/* <img src={require("../../imgs/Logo-tagged.png")} alt="logo-img" /> */}
+                        <h1><span>HiAM</span></h1>
+                        <p>ENHANCING PORTFOLIOS</p>
                     </div>
                     <div className="quotes">
                         <h1> </h1>

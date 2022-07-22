@@ -48,16 +48,16 @@ export default function ProjectsTab() {
           <img onClick={()=> {navigation('/ProjectsPage'); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} src={require("../../../imgs/projects/Zeymal-banner.jpg")} alt="user-porject" />
         </div>
         <div className="project2">
-          <img src={require("../../../imgs/projects/passforpash.jpg")} alt="user-porject" />
+          <img onClick={()=> {navigation('/ProjectsPage'); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} src={require("../../../imgs/projects/passforpash.jpg")} alt="user-porject" />
         </div>
         <div className="project3">
-          <img src={require("../../../imgs/projects/radomprofilesgen.jpg")} alt="user-porject" />
+          <img onClick={()=> {navigation('/ProjectsPage'); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} src={require("../../../imgs/projects/radomprofilesgen.jpg")} alt="user-porject" />
         </div>
         <div className="project4">
-          <img src={require("../../../imgs/projects/ducatisxr.jpg")} alt="user-porject" />
+          <img onClick={()=> {navigation('/ProjectsPage'); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} src={require("../../../imgs/projects/ducatisxr.jpg")} alt="user-porject" />
         </div>
         <div className="project5">
-          <img src={require("../../../imgs/projects/jkbank.jpg")} alt="user-project" />
+          <img onClick={()=> {navigation('/ProjectsPage'); window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} src={require("../../../imgs/projects/jkbank.jpg")} alt="user-project" />
         </div>
       </motion.div>
     </motion.div>

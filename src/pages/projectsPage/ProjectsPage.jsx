@@ -28,7 +28,6 @@ export default function ProjectsPage() {
                         </div>
                         <div className="project-page-options">
                             <i className="fas fa-external-link fa-xl"></i>
-                            <i className="fas fa-edit fa-xl"></i>
                             <i onClick={() => navigation("/MyPortfolio")} className="fas fa-arrow-right fa-xl"></i>
                         </div>
                     </div>

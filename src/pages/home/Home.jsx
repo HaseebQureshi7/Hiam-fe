@@ -14,7 +14,7 @@ export default function Home() {
                 <div className="home-container">
                     <div className="home-navbar">
                         <div className="home-title-text">
-                            <h1><neon>HiAM</neon></h1>
+                            <h1><span>HiAM</span></h1>
                         </div>
                         <div className="home-options">
                             {/* <i className="far fa-bell fa-xl"></i> */}

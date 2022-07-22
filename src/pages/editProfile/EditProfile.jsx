@@ -26,7 +26,7 @@ export default function EditProfile() {
                     </div>
                     <div className="profile-edit">
                         <div className="profile-edit-header">
-                            <h1>PROFILE</h1>
+                            <h3>PROFILE</h3>
                         </div>
                         <div className="edit-profile-picture">
                             <img src={require("../../imgs/DP.jpg")} alt="profile picture" />
@@ -59,7 +59,7 @@ export default function EditProfile() {
                     <hr />
                     <div className="edit-projects-container">
                         <div className="edit-projects-header">
-                            <h1>PROJECTS</h1>
+                            <h3>PROJECTS</h3>
                         </div>
                         <div className="project-edit-tab">
                             <h3>1</h3>
@@ -95,7 +95,7 @@ export default function EditProfile() {
                     <hr />
                     <div className="edit-skills-container">
                         <div className="edit-skills-header">
-                            <h1>SKILLS</h1>
+                            <h3>SKILLS</h3>
                         </div>
                         <div className="edit-skill-tabs">
                             <div className="edit-skill-tab">
@@ -127,8 +127,8 @@ export default function EditProfile() {
                                 <i className="fas fa-trash fa-l"></i>
                             </div>
                             <div className="edit-skill-tab">
-                                <h3>MySql</h3>
-                                <i className="fas fa-trash fa-l"></i>
+                                <h3>Add Skill</h3>
+                                <i className="fas fa-plus fa-l"></i>
                             </div>
                         </div>
                         <div className="conform-changes-btn">
